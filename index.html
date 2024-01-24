@@ -1,121 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey training BD</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'btn-color': '#FF4240',
-            'rgb': 'rgba(255, 255, 255, 0.60)',
-          }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-color': '#FF4240',
+                        'rgb': 'rgba(255, 255, 255, 0.60)',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .font-manrope {
-      font-family: 'Manrope', sans-serif;
-    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
 
-    .link {
-      margin-bottom: 10px;
-    }
-  </style>
-  <style>
-    body {
-      background-color: white;
-    }
-  </style>
+        .link {
+            margin-bottom: 10px;
+        }
+    </style>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
 </head>
+
 <body>
     <header class="container mx-auto">
         <!-- nav bar starts here-->
         <nav class="container mx-auto">
-          <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn gap-0 pr-0 btn-ghost  lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn gap-0 pr-0 btn-ghost  lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] text-base font-manrope">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>Blog</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold gap-0 font-manrope">Hockey<span
+                            class="text-[#FF4240]">’</span>s</a>
                 </div>
-                <ul tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] text-base font-manrope">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Contact</a></li>
-                  <li><a>Blog</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-4xl font-extrabold gap-0 font-manrope">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#424247] text-base">
+                        <li class="text-[#FF4240]font-manrope"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6 ">
+                    <img src="Frame.svg" alt="" class="hidden lg:inline-grid">
+                    <a class="btn bg-[#FF4240] text-[#FFF] w-37 text-center text-lg font-bold font-manrope">Get
+                        Ticket</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-[#424247] text-base">
-                <li class="text-[#FF4240]font-manrope"><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Contact</a></li>
-                <li><a>Blog</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end gap-6 ">
-              <img src="Frame.svg" alt="" class="hidden lg:inline-grid">
-              <a class="btn bg-[#FF4240] text-[#FFF] w-37 text-center text-lg font-bold font-manrope">Get Ticket</a>
-            </div>
-          </div>
         </nav>
-        <!-- banner section -->
+        <!-- banner section starts here-->
         <section class="container mx-auto mt-8">
-          <div class="carousel lg:w-full">
-            <div id="slide1" class="carousel-item relative h-[200px] lg:h-[550px] w-full ">
-              <img src="1.png" class="w-full" />
-              <div
-                class="absolute flex flex-col lg:justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 rounded-2xl">
-                <a href="#slide2" class="btn btn-circle absolute lg:left-24 lg:top-20 text-[#FFF] bg-black border-0">❮</a>
-                <a href="#slide2"
-                  class="btn btn-circle absolute right-0 lg:left-8 lg:top-20 text-[#FFF] bg-black border-0">❯</a>
-              </div>
-              <div
-                class="font-manrope mx-auto items-center bg-black font-manrope p-8 rounded-2xl      lg:absolute lg:right-10 lg:bottom-20 lg:w-2/5 ">
-                <h3 class="pb-4 text-2xl text-[#FFF]">
-                  Meet all the heroes from the field
-                </h3>
-                <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
-                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                  nullam proin.
-                </p>
-              </div>
+            <div class="carousel lg:w-full">
+                <div id="slide1" class="carousel-item relative h-[200px] lg:h-[550px] w-full ">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div
+                        class="absolute flex flex-col lg:justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 rounded-2xl">
+                        <a href="#slide2"
+                            class="btn btn-circle absolute lg:left-24 lg:top-20 text-[#FFF] bg-black border-0">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle absolute right-0 lg:left-8 lg:top-20 text-[#FFF] bg-black border-0">❯</a>
+                    </div>
+                    <div
+                        class="font-manrope mx-auto items-center bg-black font-manrope p-8 rounded-2xl      lg:absolute lg:right-10 lg:bottom-20 lg:w-2/5 ">
+                        <h3 class="pb-4 text-2xl text-[#FFF]">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus
+                            urna in sit
+                            nullam proin.
+                        </p>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                        class="w-full rounded-2xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1"
+                            class="btn btn-circle absolute left-24 top-20 text-[#FFF] bg-black border-0">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle absolute left-8 top-20 text-[#FFF] bg-black border-0">❯</a>
+                    </div>
+                    <div class="font-manrope absolute right-10 bottom-20 w-2/5 bg-black font-manrope p-8 rounded-2xl">
+                        <h3 class="pb-4 text-2xl text-[#FFF]">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus
+                            urna in sit
+                            nullam proin.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full rounded-2xl" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle absolute left-24 top-20 text-[#FFF] bg-black border-0">❮</a>
-                <a href="#slide1" class="btn btn-circle absolute left-8 top-20 text-[#FFF] bg-black border-0">❯</a>
-              </div>
-              <div class="font-manrope absolute right-10 bottom-20 w-2/5 bg-black font-manrope p-8 rounded-2xl">
-                <h3 class="pb-4 text-2xl text-[#FFF]">
-                  Meet all the heroes from the field
-                </h3>
-                <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
-                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                  nullam proin.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
-      </header>
+    </header>
+    <main class="container mx-auto font-manrope">
+        <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[30px] lg:my-[90px]">
+        <!-- Professional Club starts here-->
+        <section class="text-center font-manrope space-y-7">
+            <h3 class="text-4xl font-extrabold ">Professional Hockeys Club</h3>
+            <p class=" mx-auto text-base text-[rgba(19,19,24,0.60)] lg:w-[607px]">Dit amet consectetur. Condimentum
+                dignissim
+                adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </section>
+        <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[30px] lg:my-[90px]">
+        <section class="w-full container mx-auto grid grid-cols-1 text-center  lg:grid-cols-4 ">
+            <div class="h-[300px] w-[400px] lg:w-[250px]">
+                <div class="radial-progress text-[#FF4240]" style="--value:87; --size:8rem; --thickness: 10px;"
+                    role="progressbar"><span class="text-[#131318] font-extrabold text-2xl">87%</span></div>
+                <h3 class="my-4 text-[#131318] font-semibold text-xl">Prayer Facility</h3>
+                <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0 ">
+                    Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+            </div>
+            <div class="h-[300px] w-[400px] lg:w-[250px]">
+                <div class="radial-progress text-[#49D293]" style="--value:95; --size:8rem; --thickness: 10px;"
+                    role="progressbar"><span class="text-[#131318] font-extrabold text-2xl">95%</span></div>
+                <h3 class="my-4 text-[#131318] font-semibold text-xl">Experienced Coach</h3>
+                <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0 ">
+                    Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+            </div>
+            <div class="h-[300px] w-[400px] lg:w-[250px]">
+                <div class="radial-progress text-[#FFB546]" style="--value:90; --size:8rem; --thickness: 10px;"
+                    role="progressbar"><span class="text-[#131318] font-extrabold text-2xl">90%</span></div>
+                <h3 class="my-4 text-[#131318] font-semibold text-xl">Senior Player</h3>
+                <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0">
+                    Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+            </div>
+            <div class="h-[300px] w-[400px] lg:w-[250px]">
+                <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:8rem; --thickness: 10px;"
+                    role="progressbar"><span class="text-[#131318] font-extrabold text-2xl">80%</span></div>
+                <h3 class="my-4 text-[#131318] font-semibold text-xl">Training Ground</h3>
+                <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0 ">
+                    Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
