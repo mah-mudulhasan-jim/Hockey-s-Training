@@ -38,6 +38,84 @@
   </style>
 </head>
 <body>
-    
+    <header class="container mx-auto">
+        <!-- nav bar starts here-->
+        <nav class="container mx-auto">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn gap-0 pr-0 btn-ghost  lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] text-base font-manrope">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Contact</a></li>
+                  <li><a>Blog</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-extrabold gap-0 font-manrope">Hockey<span class="text-[#FF4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#424247] text-base">
+                <li class="text-[#FF4240]font-manrope"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-6 ">
+              <img src="Frame.svg" alt="" class="hidden lg:inline-grid">
+              <a class="btn bg-[#FF4240] text-[#FFF] w-37 text-center text-lg font-bold font-manrope">Get Ticket</a>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <section class="container mx-auto mt-8">
+          <div class="carousel lg:w-full">
+            <div id="slide1" class="carousel-item relative h-[200px] lg:h-[550px] w-full ">
+              <img src="1.png" class="w-full" />
+              <div
+                class="absolute flex flex-col lg:justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 rounded-2xl">
+                <a href="#slide2" class="btn btn-circle absolute lg:left-24 lg:top-20 text-[#FFF] bg-black border-0">❮</a>
+                <a href="#slide2"
+                  class="btn btn-circle absolute right-0 lg:left-8 lg:top-20 text-[#FFF] bg-black border-0">❯</a>
+              </div>
+              <div
+                class="font-manrope mx-auto items-center bg-black font-manrope p-8 rounded-2xl      lg:absolute lg:right-10 lg:bottom-20 lg:w-2/5 ">
+                <h3 class="pb-4 text-2xl text-[#FFF]">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
+                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                  nullam proin.
+                </p>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle absolute left-24 top-20 text-[#FFF] bg-black border-0">❮</a>
+                <a href="#slide1" class="btn btn-circle absolute left-8 top-20 text-[#FFF] bg-black border-0">❯</a>
+              </div>
+              <div class="font-manrope absolute right-10 bottom-20 w-2/5 bg-black font-manrope p-8 rounded-2xl">
+                <h3 class="pb-4 text-2xl text-[#FFF]">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
+                  Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                  nullam proin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
 </body>
 </html>
